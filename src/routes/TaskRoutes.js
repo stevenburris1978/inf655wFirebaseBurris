@@ -1,14 +1,14 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Task from "../components/Task/Task";
-import NewTask from "../components/Task/NewTask";
+import Product from "../components/Product/Product";
+import SaleBox from "../components/Product/SaleBox";
 
 export default function TaskRoutes() {
   return (
     <Routes>
-      <Route index element={<Task />} />
-      <Route path=":id" element={<Task />} />
-      <Route path="newTask" element={<NewTask />} />
+      <Route index element={<Product />} />
+      <Route path=":id" element={<Product />} />
+      <Route path="saleBox" element={<SaleBox />} />
     </Routes>
   );
 }

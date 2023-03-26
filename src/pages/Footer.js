@@ -1,14 +1,15 @@
 import React from "react";
-import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTwitter, FaMeetup } from "react-icons/fa";
 
 export default function Footer() {
   return (
     <div className="footer">
-      <h1>Get Connected with our network</h1>
+      <h1>Social Connections</h1>
       <div>
-        <FaFacebook size={30} />
-        <FaInstagram size={30} />
-        <FaTwitter size={30} />
+        <FaMeetup size={25} />
+        <FaFacebook size={25} />
+        <FaInstagram size={25} />
+        <FaTwitter size={25} />
       </div>
     </div>
   );

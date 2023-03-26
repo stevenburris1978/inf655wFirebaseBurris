@@ -1,9 +1,9 @@
 import { useState } from "react";
-import Products from "../components/Product/Products";
+import Tasks from "../components/Product/Tasks";
 import ProductData from "../components/Product/ProductData";
-import SaleBox from "../components/Product/SaleBox";
 
-export default function HomePage() {
+
+export default function SearchPage() {
   const [productList, setProductList] = useState(ProductData);
 
   const deleteTask = (id) => {
@@ -20,8 +20,7 @@ export default function HomePage() {
 
   return (
     <div className="container">
-      <SaleBox />
-      <Products
+      <Tasks
         productList={productList}
         handelDelete={deleteTask}
         handelChecked={checkTask}
