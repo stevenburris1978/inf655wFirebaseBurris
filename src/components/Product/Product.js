@@ -4,8 +4,10 @@ import Card from "../shared/Card";
 
 export default function Product({
   id,
+  image,
   category,
   name,
+  price,
   handelDelete,
   checked,
   handelChecked,
@@ -20,6 +22,13 @@ export default function Product({
         />
 
         <div
+          className="image"
+
+        >
+          {image}
+        </div>
+
+        <div
           className="text-display"
           style={checked ? { textDecoration: "line-through" } : null}
         >
@@ -30,6 +39,12 @@ export default function Product({
           style={checked ? { textDecoration: "line-through" } : null}
         >
           {name}
+        </div>
+        <div
+          className="text-display"
+          style={checked ? { textDecoration: "line-through" } : null}
+        >
+          {price}
         </div>
         <button onClick={() => handelDelete(id)} className="delete">
           <FaTrashAlt />

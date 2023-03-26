@@ -15,7 +15,7 @@ export default function Header() {
               <NavLink to="/search">Search</NavLink>
             </li>
             <li>
-              <NavLink to="/about">About</NavLink>
+              <NavLink to="/cart">Cart</NavLink>
             </li>
           </ul>
         </nav>

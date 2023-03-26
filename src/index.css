@@ -148,19 +148,17 @@ header{
   background-color: rgb(213, 207, 228);
 }
 
+.active{
+  color: rgb(255, 255, 255);
+}
+
+.image{
+  height: 20px;
+  width: 20px;
+}
+
 .label{
   font-size: 20px;
   font-weight: 600;
   display: block;
-}
-
-.error{
-  font-size: 20px;
-  font-weight: 600;
-  display: block;
-  color: red;
-}
-
-.active{
-  color: rgb(255, 255, 255);
 }

@@ -2,7 +2,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-import AboutPage from "./pages/AboutPage";
+import CartPage from "./pages/CartPage";
 import SearchPage from "./pages/SearchPage";
 import Header from "./pages/Header";
 import Footer from "./pages/Footer";
@@ -16,7 +16,7 @@ export default function App() {
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
+          <Route path="/cart" element={<CartPage />} />
           <Route path="/search" element={<SearchPage />} />
           <Route path="/task/*" element={<TaskRoutes />} />
           <Route path="*" element={<NotFound />} />
