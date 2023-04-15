@@ -1,23 +1,26 @@
-import React from "react";
+import React, { useContext } from "react";
 import Product from "./Product";
+import ProductContext from "../context/ProductContext";
 
-export default function Products({ productList, handelDelete, handelChecked }) {
+export default function Products() {
+
+  const { productList } = useContext(ProductContext);
+  const result = productList;
 
   return (
     <>
-      {productList.length ? (
+      {result.length ? (
         <div>
-          {productList.map((product) => (
+          {result.map((product) => (
             <Product
-              key={product.id}
+              key={product.data.id}
               id={product.id}
-              image={product.image}
-              category={product.category}
-              name={product.name}
-              price={product.price}
-              handelDelete={handelDelete}
-              checked={product.checked}
-              handelChecked={handelChecked}
+              image={product.data.image}
+              category={product.data.category}
+              name={product.data.name}
+              price={product.data.price}
+              checked={product.data.checked}
+              product={product}
             />
           ))}
         </div>

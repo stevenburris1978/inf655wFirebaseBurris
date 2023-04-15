@@ -1,6 +1,7 @@
-import React from "react";
-import { FaTrashAlt } from "react-icons/fa";
+import React, { useContext } from "react";
+import { FaTrashAlt, FaEdit } from "react-icons/fa";
 import Card from "../shared/Card";
+import ProductContext from "../context/ProductContext";
 
 export default function Product({
   id,
@@ -8,17 +9,18 @@ export default function Product({
   category,
   name,
   price,
-  handelDelete,
+  product,
   checked,
-  handelChecked,
+
 }) {
+  const { checkProduct, deleteProduct, editProduct } = useContext(ProductContext);
   return (
     <>
       <Card>
         <input
           type="checkbox"
           checked={checked}
-          onChange={() => handelChecked(id)}
+          onChange={() => checkProduct(id)}
         />
 
         <div
@@ -46,7 +48,10 @@ export default function Product({
         >
           {price}
         </div>
-        <button onClick={() => handelDelete(id)} className="delete">
+        <button onClick={() => editProduct(product)} className="edit">
+          <FaEdit />
+        </button>
+        <button onClick={() => deleteProduct(id)} className="delete">
           <FaTrashAlt />
         </button>
       </Card>

@@ -1,14 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import SearchProducts from "./SearchProducts";
 import Product from "./Product";
+import ProductContext from "../context/ProductContext";
 
-export default function Tasks({ productList, handelDelete, handelChecked }) {
+export default function Tasks() {
   const [search, setSearch] = useState("");
 
-  const result = productList.filter((product) => (
-    product.category.toLowerCase().includes(search.toLowerCase()) ||
-    product.name.toLowerCase().includes(search.toLowerCase())
-  ));
+  const { productList } = useContext(ProductContext);
+
+  const result = productList;
+
+  // const result = productList.filter((product) => (
+  //   product.category.toLowerCase().includes(search.toLowerCase()) ||
+  //   product.name.toLowerCase().includes(search.toLowerCase())
+  // ));
 
   return (
     <>
@@ -17,15 +22,14 @@ export default function Tasks({ productList, handelDelete, handelChecked }) {
         <div>
           {result.map((product) => (
             <Product
-              key={product.id}
+              key={product.data.id}
               id={product.id}
-              image={product.image}
-              category={product.category}
-              name={product.name}
-              price={product.price}
-              handelDelete={handelDelete}
-              checked={product.checked}
-              handelChecked={handelChecked}
+              image={product.data.image}
+              category={product.data.category}
+              name={product.data.name}
+              price={product.data.price}
+              checked={product.data.checked}
+              product={product}
             />
           ))}
         </div>
