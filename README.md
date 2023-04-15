@@ -1,6 +1,22 @@
-# Getting Started with Create React App
+# CART-APP
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+
+With the cart-app you can route between the pages with the navigation links. Firebase is used for authentication and collections. You must register and login to use the cart-app. You can add a product to the firebase productList collection. You can edit a product in the collection and also delete products from the collection. 
+
+## Instructions
+
+1. The firebase colleciton updates when using the edit button.In order to see the collection update in the browser, you must refresh the page.
+2. To delete or add, there are no additional steps other then to click the buttons to make the changes.
+3. You can register from the log in page.
+4. you may change your name and email once you have registered and logged in.
+
+## challenges faced
+1. I needed more time to complete the assignment because i got stuck on how to get the edit to work.
+
+2. 
+
+Provide a brief explanation of your implementation choices, challenges faced, and any additional features or improvements made.
 
 ## Available Scripts
 

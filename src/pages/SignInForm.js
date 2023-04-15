@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import FormButton from "../components/shared/FormButton";
 import FormHeader from "../components/shared/FormHeader";
 import FormInput from "../components/shared/FormInput";
-import { FaFacebook, FaGithub, FaGoogle } from "react-icons/fa";
+import { FaFacebook, FaMeetup, FaGoogle } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import { UserAuth } from "../components/context/AuthContext";
 
@@ -134,7 +134,7 @@ export default function SignInForm() {
             <label>Or Sign in with:</label>
             <div className="iconGroup">
               <FaFacebook id="facebookIcon" />
-              <FaGithub id="gitIcon" />
+              <FaMeetup id="meetupIcon" />
               <FaGoogle id="googleIcon" />
             </div>
           </div>

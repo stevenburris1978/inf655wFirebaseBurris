@@ -166,7 +166,7 @@ header{
 .img{
   width: 40%;
   height: auto;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(15, 25, 227, 0.1);
 }
 
 .error{
@@ -184,11 +184,8 @@ header{
 }
 
 .loginForm{
-  max-width: 500px;
-  min-width: 300px;
-  max-height: 700px;
-  width: 30%;
-  height: 70%;
+  width: 90%;
+  height: 90%;
   margin: 100px auto;
   background-color: #FFFFFF;
   border-radius: 25px;
@@ -229,17 +226,18 @@ header{
 }
 
 .row button{
-  border-radius: 25px;
+  border-radius: 10px;
   width: 80%;
   height: 40px;
   font-size: 1.3rem;
   color: white;
   font-weight: 700;
   background: rgb(34,193,195);
-  background: linear-gradient(90deg, rgb(171, 195, 34) 0%,     rgb(255, 174, 0) 100%);
+  background: linear-gradient(90deg, rgb(9, 9, 245) 0%,     rgb(39, 188, 237) 100%);
   border: 0px;
   cursor: pointer;
   transition: opacity 0.25s ease-out;
+
 }
 
 .row button:hover{
@@ -250,7 +248,7 @@ header{
   padding-bottom: 1.5rem;
 }
 
-#facebookIcon, #gitIcon, #googleIcon  {
+#facebookIcon, #meetupIcon, #googleIcon  {
   width: 1.5rem;
   height: 1.5rem;
 }
