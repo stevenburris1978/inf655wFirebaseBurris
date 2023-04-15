@@ -10,11 +10,6 @@ export default function Tasks() {
 
   const result = productList;
 
-  // const result = productList.filter((product) => (
-  //   product.category.toLowerCase().includes(search.toLowerCase()) ||
-  //   product.name.toLowerCase().includes(search.toLowerCase())
-  // ));
-
   return (
     <>
       <SearchProducts search={search} setSearch={setSearch} />

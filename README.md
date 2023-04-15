@@ -11,12 +11,17 @@ With the cart-app you can route between the pages with the navigation links. Fir
 3. You can register from the log in page.
 4. you may change your name and email once you have registered and logged in.
 
-## challenges faced
-1. I needed more time to complete the assignment because i got stuck on how to get the edit to work.
+## 1.Provide a brief explanation of your implementation choices, 2. challenges faced, and 3.any additional features or improvements made.
 
-2. 
+1. I chose to have a search page on a seperate page other than the homepage. On the homepage, you can add, delete, or edit a product.  
 
-Provide a brief explanation of your implementation choices, challenges faced, and any additional features or improvements made.
+2. I did not get to the search by category or name opration. I had issues when needing to use .data or not using it with the props.
+I did not get the checked to work.
+
+3. adding firebase for user authentication and the product list is an improvement that I have made.
+ 
+
+
 
 ## Available Scripts
 
